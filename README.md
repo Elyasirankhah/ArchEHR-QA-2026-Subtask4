@@ -1,8 +1,14 @@
 # Yale-DM-Lab at ArchEHR-QA 2026 — Subtask 4: Evidence Alignment
 
-This repository contains the **Yale-DM-Lab** system for **Subtask 4 (Evidence Alignment)** of [ArchEHR-QA 2026](https://github.com/sarveshsoni/ArchEHR-QA) (CL4Health @ LREC-COLING 2026), as in the paper *Yale-DM-Lab at ArchEHR-QA 2026: Deterministic Grounding and Multi-Pass Evidence Alignment for EHR Question Answering*. The task maps each clinician answer sentence to the note sentence IDs that directly support it. Evaluation is micro F1 over (answer_id, evidence_id) pairs.
+This repository contains the **Yale-DM-Lab** system for **Subtask 4 (Evidence Alignment)** of **ArchEHR-QA 2026 (CL4Health @ LREC-COLING 2026)**. The task maps each clinician answer sentence to the note sentence IDs that directly support it. Evaluation is micro F1 over (answer_id, evidence_id) pairs.
 
-**Other subtasks (same author):** [Subtask 1 — Question Reformulation](https://github.com/Elyasirankhah/ArchEHR-QA-2026-Subtask1) · [Subtask 2 — Evidence Identification](https://github.com/Elyasirankhah/ArchEHR-QA-2026-Subtask2) · [Subtask 3 — Answer Generation](https://github.com/Elyasirankhah/ArchEHR-QA-2026-Subtask3). This repository is Subtask 4.
+## Leaderboard results (Codabench)
+
+**Team:** [Data Mining Lab @ Yale](https://github.com/Data-Mining-Lab-Yale)  
+**Participant:** [Elyasirankhah](https://github.com/Elyasirankhah)  
+**Place:** 3rd out of 141 submissions (32 participants).
+
+**Other subtasks:** [Subtask 1 — Question Reformulation](https://github.com/Elyasirankhah/ArchEHR-QA-2026-Subtask1) · [Subtask 2 — Evidence Identification](https://github.com/Elyasirankhah/ArchEHR-QA-2026-Subtask2) · [Subtask 3 — Answer Generation](https://github.com/Elyasirankhah/ArchEHR-QA-2026-Subtask3). This repository is Subtask 4.
 
 ## Pipeline overview
 
@@ -10,7 +16,6 @@ The system uses a **system** message plus interleaved **user**/**assistant** few
 
 **Reported results:** Best dev **88.81** micro F1 (ensemble + rescue heuristics). Test **80.41** micro F1.
 
-![Subtask 4 pipeline](pipeline.jpg)
 
 ---
 
@@ -25,7 +30,7 @@ task4_release/
 ├── submission/
 ├── requirements.txt
 ├── README.md
-└── v1.5/v1.5/          # optional: dev/, test/, test-2026/ with archehr-qa.xml + archehr-qa_key.json
+└── v1.5/v1.5/         
 ```
 
 **Run from the directory containing the pipeline** (or set working directory accordingly):
