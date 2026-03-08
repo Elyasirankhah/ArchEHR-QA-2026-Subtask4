@@ -1,0 +1,4 @@
+# ArchEHR-QA 2026 Subtask 4 — Evidence Alignment
+openai>=1.0.0
+python-dotenv>=1.0.0
+lxml>=4.9.0
